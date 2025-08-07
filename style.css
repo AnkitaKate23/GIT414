@@ -1,8 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -109,8 +108,7 @@ h1{
 	padding: 0;
 	margin: -1px;
 	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap; /* added line */
+	white-space: nowrap; 
 	border: 0; 
 }
 
@@ -212,10 +210,6 @@ input:focus, select:focus, textarea:focus{
 	box-shadow: 0 0 0 0.09em currentColor;
 }
 
-input:error, select:error, textarea:error{
-	background-color: #c71819;
-}
-
 fieldset{
 	margin: 0.5em auto;
 	padding-bottom: 0.5em;
@@ -277,6 +271,10 @@ input[type="submit"]{
 input[type="submit"]:hover, input[type="submit"]:focus{
 	background-color: #063599;
 	filter: drop-shadow(8px 8px 4px #777);
+}
+
+.required {
+	color: #c71819;
 }
 
 footer{

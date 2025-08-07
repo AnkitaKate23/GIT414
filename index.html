@@ -40,20 +40,21 @@
       <h2>Contact Form</h2>
       <form id="mainform" action="https://wp.zybooks.com/form-viewer.php" method="POST">
 
-        <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
-        <input type="text" id="fullname" name="fullname" autocomplete="name" required >
+        <label for="fullname">Full Name <span class="required" aria-hidden="true">*</span></label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Your Name" autocomplete="name" required >
 
 
-        <label for="email">Email <span aria-hidden="true">*</span></label>
-        <input type="email" id="email" name="email" autocomplete="email" required>
+        <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Eamil" autocomplete="email" required>
 
 
-        <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
-        <input type="tel" id="phone" name="phone" maxlength="10" autocomplete="tel" title="Enter 10-digit phone number" required >
+        <label for="phone">Phone Number <span class="required" aria-hidden="true">*</span></label>
+        <input type="tel" id="phone" name="phone" pattern="[\d\s\-\+]{7,}" 
+        placeholder="e.g., 123-456-7890" autocomplete="tel" title="Enter 10-digit phone number" required >
 
      
         <fieldset>
-          <legend>Preferred Contact Method <span aria-hidden="true">*</span></legend>
+          <legend>Preferred Contact Method <span class="required" aria-hidden="true">*</span></legend>
           <input type="radio" id="contact-email" name="contact_method" value="email" checked >
           <label for="contact-email">Email</label>
           <input type="radio" id="contact-phone" name="contact_method" value="phone" >
@@ -61,7 +62,7 @@
         </fieldset>
 
     
-        <label for="state">State of Residence <span aria-hidden="true">*</span></label>
+        <label for="state">State of Residence <span class="required" aria-hidden="true">*</span></label>
         <select id="state" name="state" required aria-required="true">
 			<option value="">--Select your state--</option>
 			<option value="AL">Alabama</option>
@@ -116,7 +117,7 @@
 			<option value="WY">Wyoming</option>
         </select>
         <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter Your Comments"></textarea>
         <input type="submit" value="Submit">
       </form>
 
